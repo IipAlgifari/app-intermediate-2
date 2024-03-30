@@ -1,0 +1,35 @@
+/* ==========================================================================
+Components - Loyalty
+========================================================================== */
+.loyalty {
+  background-color: rgb(16 24 32);
+  color: white;
+  padding: 80px 0;
+  &__wrapper {
+    display: flex;
+    justify-content: baseline;
+  }
+  &__img {
+    width: 50%;
+    align-self: center;
+    text-align: center;
+  }
+  &__txt {
+    width: 50%;
+    align-self: center;
+    padding: 0 20px;
+  }
+  &__title {
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: .8px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  &__desc {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+}

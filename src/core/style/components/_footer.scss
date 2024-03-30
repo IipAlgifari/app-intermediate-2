@@ -1,0 +1,139 @@
+/* ==========================================================================
+Components - Header
+========================================================================== */
+.footer {
+  background-color: rgb(16 24 32);
+  color: white;
+  padding: 80px 0;
+  &__head {
+    margin-bottom: 56px;
+  }
+
+  // footer body
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    gap: 40px;
+    border-bottom: 1.5px solid rgb(99 102 106);
+
+  }
+  &__container {
+    width: 20%;
+  }
+  &__title {
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    &.media {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 48px;
+    }
+    &.section {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 20px;
+      width: 33.3333333%;
+    }
+  }
+  &__item {
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &.icons {
+      width: 25%;
+      margin-bottom: 0;
+      text-align: center;
+      padding: 4px;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    & .svg-inline--fa {
+      height: 24px;
+      &.fa-apple {
+        height: 28px;
+        width: 28px;
+      }
+      &.fa-google-play {
+        height: 28px;
+        width: 28px;
+      }
+    }
+    &.section {
+      border-bottom: 1px solid white;
+    }
+  }
+  &__store {
+    display: flex;
+    justify-content: baseline;
+    gap: 20px;
+    &__item {
+      width: 40px;
+      height: 40px;
+      padding: 6px;
+      text-align: center;
+    }
+  }
+
+  // footer section
+  &__section {
+    padding: 40px 0;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  &__dropdown {
+    width: 33.3333333%;
+    text-align: center;
+    &__btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 32px;
+      padding: 12px 20px;
+      text-align: left;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 20px;
+      border: 1px solid #d3d3d33d;
+      width: 100%;
+      background-color: transparent;
+      & select {
+        width: 100%;
+        font-size: 16px;
+        padding: 8px;
+        background-color: transparent;
+        border: 0;
+        color: white;
+        & option {
+          background-color: darkgray;
+          margin-bottom: 16px;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+
+  // copyright
+  &__copyright {
+    &__txt {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}

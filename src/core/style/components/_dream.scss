@@ -1,0 +1,62 @@
+/* ==========================================================================
+Components - Header
+========================================================================== */
+.dream {
+  padding: 80px 0;
+  &__head {
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  &__title {
+    font-size: 48px;
+    line-height: 64px;
+    color: black;
+    margin-bottom: 24px;
+  }
+  &__card {
+    padding-top: 80px;
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+    }
+    &__item {
+      background-color: rgb(124 204 108);
+      box-shadow: 0px 0px 32px 10px #b2e5b8;
+      width: 25%;
+      min-height: 340px;
+      border-radius: 40px;
+      &:nth-child(2) {
+        background-color: rgb(212 139 200);
+        box-shadow: 0px 0px 32px 10px #d0b4d4;;
+      }
+      &:nth-child(3) {
+        box-shadow: 0px 0px 32px 10px #d0b4d4;
+        background-color: rgb(255 174 98);
+      }
+      &:last-child {
+        box-shadow: 0px 0px 32px 10px #b2e6f2;
+        background-color: rgb(74 201 227);
+      }
+    }
+  }
+  &__img {
+    position: relative;
+    height: 130px;
+    padding: 40px;
+    &__el {
+      position: absolute;
+      top: -80px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__txt {
+    padding: 40px;
+  }
+  &__subtitle {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: bold;
+  }
+}
